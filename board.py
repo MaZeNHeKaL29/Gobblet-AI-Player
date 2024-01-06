@@ -107,3 +107,63 @@ class Board(object):
 
 	def empty_board(self):
 		self.matrix = [[Square() for _ in range(4)] for _ in range(4)]
+
+
+	def check_three_rows(self, color,size):
+		matching_squares = []
+
+		# Check horizontally
+		for row in range(4):
+			for col in range(4 - 2):
+				if all(self.matrix[row][col + i].getLastGobblet() is not None for i in range(3)):
+					if all(self.matrix[row][col + i].getLastGobblet().color == color for i in range(3)):
+						if any(self.matrix[row][col + i].getLastGobblet().size < size for i in range(3)):
+							r = row
+							c = col + [i for i in range(3) if self.matrix[row][col + i].getLastGobblet().size < size][0]
+							square_number = r * 4 + col + 1
+							matching_squares.append(square_number)
+
+		# Check vertically
+		for col in range(4):
+			for row in range(4 - 2):
+				if all(self.matrix[row + i][col].getLastGobblet() is not None for i in range(3)):
+					if all(self.matrix[row + i][col].getLastGobblet().color == color for i in range(3)):
+						if any(self.matrix[row + i][col].getLastGobblet().size < size for i in range(3)):
+							r = row + [i for i in range(3) if self.matrix[row + i][col].getLastGobblet().size < size][0]
+							c = col
+							square_number = r * 4 + col + 1
+							matching_squares.append(square_number)
+
+		# Check diagonally (top-left to bottom-right)
+		for row in range(4 - 2):
+			for col in range(4 - 2):
+				if all(self.matrix[row + i][col + i].getLastGobblet() is not None for i in range(3)):
+					if all(self.matrix[row + i][col + i].getLastGobblet().color == color for i in range(3)):
+						if any(self.matrix[row + i][col + i].getLastGobblet().size < size for i in range(3)):
+							r = row + [i for i in range(3) if self.matrix[row + i][col + i].getLastGobblet().size < size][0]
+							c = col + [i for i in range(3) if self.matrix[row + i][col + i].getLastGobblet().size < size][0]
+							square_number = r * 4 + c + 1
+							matching_squares.append(square_number)
+
+		# Check diagonally (top-right to bottom-left)
+		for row in range(4 - 2):
+			for col in range(3, 4):
+				if all(self.matrix[row + i][col - i].getLastGobblet() is not None for i in range(3)):
+					if all(self.matrix[row + i][col - i].getLastGobblet().color == color for i in range(3)):
+						if any(self.matrix[row + i][col - i].getLastGobblet().size < size for i in range(3)):
+							r = row + [i for i in range(3) if self.matrix[row + i][col - i].getLastGobblet().size < size][0]
+							c = col - [i for i in range(3) if self.matrix[row + i][col - i].getLastGobblet().size < size][0]
+							square_number = r * 4 + c + 1
+							matching_squares.append(square_number)
+
+		return matching_squares
+	
+
+	def get_non_empty_squares(self):
+		non_empty_squares = []
+		for row in range(4):
+			for col in range(4):
+				if self.matrix[row][col].gobblets:
+					square_number = row * 4 + col + 1  # Assuming square numbers start from 1
+					non_empty_squares.append(square_number)
+		return non_empty_squares

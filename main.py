@@ -365,6 +365,12 @@ class MyMainWindow(QMainWindow):
 
             self.size = gobblet.size*10 + 10
 
+            large_squares = self.board.get_squares_by_size((self.size - 1) // 10)
+
+            if(len(large_squares) >= 16):
+                self.label.setText(self.label.Text() + " No Available Moves")
+                return
+
             self.display.show() 
             font = QFont("Segoe UI", gobblet.size * 10 +10)
             font.setBold(True)
@@ -393,6 +399,14 @@ class MyMainWindow(QMainWindow):
             self.click = "CHOOSESQUARE"
 
             self.disable_buttons()
+
+
+            for square_number in large_squares:
+                # Access the corresponding button using self.b[square_number - 1]
+                button_f = self.b[square_number - 1]
+
+                # Now you can perform any operations on the button
+                button_f.setEnabled(False)
 
 
 
@@ -481,12 +495,27 @@ class MyMainWindow(QMainWindow):
 
         self.disable_buttons()
 
-        for square_number in large_squares:
+        non_empty_squares = self.board.get_non_empty_squares()
+
+        for square_number in non_empty_squares:
             # Access the corresponding button using self.b[square_number - 1]
             button = self.b[square_number - 1]
 
             # Now you can perform any operations on the button
             button.setEnabled(False)
+
+        if(self.color == "WHITE"):
+            three_in_row__squares = self.board.check_three_rows("BLACK", (size - 1) // 10)
+        elif(self.color == "BLACK"):
+            three_in_row__squares = self.board.check_three_rows("WHITE", (size - 1) // 10)
+
+        for square_number in three_in_row__squares:
+            # Access the corresponding button using self.b[square_number - 1]
+            button = self.b[square_number - 1]
+
+            # Now you can perform any operations on the button
+            button.setEnabled(True)
+
 
 
     def disable_all_buttons(self):
