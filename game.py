@@ -441,3 +441,192 @@ class MyMainWindow(QMainWindow,Ui_Form):
             if self.BLACKAI:
                 self.label.setText("Player 2 Thinking....")
                 self.playAI()
+
+
+
+    # Enable all buttons on the game board
+    def enable_buttons(self):
+        for i in range(1, 17):
+            self.b[i-1].setEnabled(True)
+        self.b_BG1.setEnabled(True)
+        self.b_BG2.setEnabled(True)
+        self.b_BG3.setEnabled(True)
+        self.b_WG1.setEnabled(True)
+        self.b_WG2.setEnabled(True)
+        self.b_WG3.setEnabled(True)
+
+    # Disable specific buttons based on game state and player actions
+    def disable_buttons(self):
+        # Enable all buttons initially
+        self.enable_buttons()
+
+        # Disable Black Gobblet buttons if it's White's turn or if choosing a square
+        if ((self.color == "WHITE" or self.click == "CHOOSESQUARE") or self.BLACKAI):
+            self.b_BG1.setEnabled(False)
+            self.b_BG2.setEnabled(False)
+            self.b_BG3.setEnabled(False)
+
+        # Disable White Gobblet buttons if it's Black's turn or if choosing a square
+        if ((self.color == "BLACK" or self.click == "CHOOSESQUARE") or self.WHITEAI):
+            self.b_WG1.setEnabled(False)
+            self.b_WG2.setEnabled(False)
+            self.b_WG3.setEnabled(False)
+
+        # Disable square buttons if choosing a gobblet
+        if (self.click == "CHOOSEGOBBLET"):
+            empty_squares = self.board.get_empty_squares()
+            for square_number in empty_squares:
+                # Access the corresponding button using self.b[square_number - 1]
+                button = self.b[square_number - 1]
+                button.setEnabled(False)
+
+        # Disable square buttons with Black gobblets if it's White's turn or if Black is AI
+        if ((self.color == "WHITE" and self.click == "CHOOSEGOBBLET") or self.BLACKAI):
+            black_squares = self.board.get_squares_by_color("BLACK")
+            for square_number in black_squares:
+                # Access the corresponding button using self.b[square_number - 1]
+                button = self.b[square_number - 1]
+                button.setEnabled(False)
+
+        # Disable square buttons with White gobblets if it's Black's turn or if White is AI
+        if ((self.color == "BLACK" and self.click == "CHOOSEGOBBLET") or self.WHITEAI):
+            white_squares = self.board.get_squares_by_color("WHITE")
+            for square_number in white_squares:
+                # Access the corresponding button using self.b[square_number - 1]
+                button = self.b[square_number - 1]
+                button.setEnabled(False)
+
+        # Disable Black Gobblet button if it has no more gobblets
+        if (self.BG1.size == 0):
+            self.b_BG1.setEnabled(False)
+
+        # Disable Black Gobblet button if it has no more gobblets
+        if (self.BG2.size == 0):
+            self.b_BG2.setEnabled(False)
+
+        # Disable Black Gobblet button if it has no more gobblets
+        if (self.BG3.size == 0):
+            self.b_BG3.setEnabled(False)
+
+        # Disable White Gobblet button if it has no more gobblets
+        if (self.WG1.size == 0):
+            self.b_WG1.setEnabled(False)
+
+        # Disable White Gobblet button if it has no more gobblets
+        if (self.WG2.size == 0):
+            self.b_WG2.setEnabled(False)
+
+        # Disable White Gobblet button if it has no more gobblets
+        if (self.WG3.size == 0):
+            self.b_WG3.setEnabled(False)
+
+
+        
+        
+        
+
+    # Handling Button click when choosing an empty square or square with gobblet 
+    def square_button_clicked(self):
+        # Handling button click when choosing an empty square
+        if self.click == "CHOOSESQUARE":
+            button_sender = self.sender()
+            font = QFont("Segoe UI", self.size)
+            font.setBold(True)
+            button_sender.setFont(font)
+            button_sender.setText("O")
+
+            # Find the row and column of the clicked square
+            for i in range(1, 17):
+                if button_sender.objectName() == self.b[i - 1].objectName():
+                    row = (i - 1) // 4
+                    col = (i - 1) % 4
+                    self.board.appendGobbletToSquare(row, col, Gobblet(self.color, (self.size - 1) // 10))
+
+            # Switch player turns and update UI accordingly
+            if self.color == "WHITE":
+                button_sender.setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+                self.color = "BLACK"
+                self.label.setText("Player 2 : Choose Black Gobblet")
+            elif self.color == "BLACK":
+                button_sender.setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+                self.color = "WHITE"
+                self.label.setText("Player 1 : Choose White Gobblet")
+
+            self.display.hide()
+            self.click = "CHOOSEGOBBLET"
+            self.disable_buttons()
+            self.show_buttons()
+            self.check_winner()
+
+        # Handling button click when choosing a gobblet
+        elif self.click == "CHOOSEGOBBLET":
+            self.show_buttons()
+            button_sender = self.sender()
+
+            # Find the row and column of the clicked square
+            for i in range(1, 17):
+                if button_sender.objectName() == self.b[i - 1].objectName():
+                    row = (i - 1) // 4
+                    col = (i - 1) % 4
+                    gobblet = self.board.get_gobblet(row, col)
+
+            # Find large squares and update display button
+            large_squares = self.board.get_squares_by_size(gobblet.size)
+            button = self.display
+
+            # Find valid moves for the selected gobblet
+            valid_squares = self.board.get_valid_moves(False, self.board, gobblet)
+
+            # Display message for no available moves
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            # Set the size and show the display button
+            self.size = gobblet.size * 10 + 10
+            self.display.show()
+            font = QFont("Segoe UI", gobblet.size * 10 + 10)
+            font.setBold(True)
+            button.setFont(font)
+            button.setText("O")
+
+            # Update UI and switch player turns
+            if self.color == "WHITE":
+                button.setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+                self.label.setText("Player 1: Choose a Position for Gobblet")
+            elif self.color == "BLACK":
+                button.setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+                self.label.setText("Player 2: Choose a Position for Gobblet")
+
+            # Remove gobblet from its original position
+            self.board.removeLastGobbletFromSquare(row, col)
+            gobblet = self.board.get_gobblet(row, col)
+
+            # Update the display of the clicked square
+            if gobblet is not None:
+                font = QFont("Segoe UI", gobblet.size * 10 + 10)
+                font.setBold(True)
+                button_sender.setFont(font)
+                if gobblet.color == "WHITE":
+                    button_sender.setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+                elif gobblet.color == "BLACK":
+                    button_sender.setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+            else:
+                button_sender.setText("")
+
+            self.click = "CHOOSESQUARE"
+            self.disable_buttons()
+
+            # Disable buttons in large squares to prevent choosing them
+            for square_number in large_squares:
+                button_f = self.b[square_number - 1]
+                button_f.setEnabled(False)
+
+            for square_number in valid_squares:
+                button_f = self.b[square_number - 1]
+                button_f.setEnabled(True)
+
+            self.show_disabled_buttons()
