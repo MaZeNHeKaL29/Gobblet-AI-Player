@@ -1,0 +1,2594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>829</width>
+       <height>655</height>
+      </size>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab1_1">
+      <attribute name="title">
+       <string>P VS P</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QPushButton" name="gobbletBlack_1">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="gobbletBlack_2">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="gobbletBlack_3">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QPushButton" name="buttonboard_1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QPushButton" name="buttonboard_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_8">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QPushButton" name="buttonboard_9">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_12">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <item>
+                <widget class="QPushButton" name="buttonboard_13">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_15">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonboard_16">
+                 <property name="minimumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>131</width>
+                   <height>95</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QPushButton" name="gobbletWhite_1">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="gobbletWhite_2">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="gobbletWhite_3">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>98</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>O</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="draw_1">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Draw</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="newGame_1">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>New Game</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="display_1">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>50</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab1_Computer">
+      <attribute name="title">
+       <string>P VS Computer</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QPushButton" name="gobbletBlack_7">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>50</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>O</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="gobbletBlack_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>50</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>O</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="gobbletBlack_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>50</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>O</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QPushButton" name="buttonboard_20">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_21">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_22">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_23">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QPushButton" name="buttonboard_24">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_25">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_26">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_27">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QPushButton" name="buttonboard_28">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_29">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_30">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_31">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QPushButton" name="buttonboard_32">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_33">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_34">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonboard_35">
+               <property name="minimumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>131</width>
+                 <height>95</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>50</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(170, 170, 127);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QPushButton" name="gobbletWhite_7">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>50</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>O</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="gobbletWhite_8">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>50</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>O</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="gobbletWhite_9">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>98</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>50</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>O</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QRadioButton" name="radioButton">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Play As Black</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBoxdiff_1">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Easy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Medium</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Hard</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="draw_2">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Draw</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="newGame_2">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>New Game</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Play As White</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBoxdiff_4">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Easy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Medium</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Hard</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="display_2">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>50</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabComputer_Computer">
+      <attribute name="title">
+       <string>Computer VS Computer</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_18">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_25">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_20">
+               <item>
+                <widget class="QPushButton" name="gobbletBlack_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>O</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="gobbletBlack_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>O</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="gobbletBlack_12">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>O</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_21">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_50">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_51">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_52">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_53">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_26">
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_54">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_55">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_56">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_57">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_27">
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_58">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_59">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_60">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_61">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_28">
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_62">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_63">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_64">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonboard_65">
+                   <property name="minimumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>131</width>
+                     <height>95</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>50</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 170, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_22">
+               <item>
+                <widget class="QPushButton" name="gobbletWhite_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>O</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="gobbletWhite_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>O</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="gobbletWhite_12">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>98</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>50</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>O</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_29">
+             <item>
+              <widget class="QComboBox" name="comboBoxdiff_2">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Easy</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Medium</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Hard</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="resume_pause">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Resume/Pause</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="draw_3">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Draw</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="newGame_3">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>New Game</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxdiff_3">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Easy</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Medium</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Hard</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>98</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
