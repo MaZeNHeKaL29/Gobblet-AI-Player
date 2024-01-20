@@ -630,3 +630,284 @@ class MyMainWindow(QMainWindow,Ui_Form):
                 button_f.setEnabled(True)
 
             self.show_disabled_buttons()
+
+
+
+
+    # Handle Buttons for Choosing New Gobblets
+    def gobblet_button_clicked(self):
+        # Display the buttons on the game board
+        self.show_buttons()
+        
+        # Get the button that triggered the event
+        button_sender = self.sender()
+
+        # Handle Black Gobblet 1
+        if button_sender.objectName() == self.b_BG1.objectName():
+            size = (self.BG1.size) * 10 + 10
+
+            # Get valid squares for the selected Gobblet
+            valid_squares = self.board.get_valid_moves(True, self.board, self.BG1)
+
+            # Display message if no available moves
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            # Update Gobblet size and button display
+            if self.BG1.size > 0:
+                self.BG1.setSize(self.BG1.size - 1)
+            if self.BG1.size == 0:
+                button_sender.setText("")
+            font = QFont("Segoe UI", self.BG1.size * 10 + 10)
+            font.setBold(True)
+            size = (self.BG1.size + 1) * 10 + 10
+
+        # Handle Black Gobblet 2
+        elif button_sender.objectName() == self.b_BG2.objectName():
+            size = (self.BG2.size) * 10 + 10
+
+            valid_squares = self.board.get_valid_moves(True, self.board, self.BG2)
+
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            if self.BG2.size > 0:
+                self.BG2.setSize(self.BG2.size - 1)
+            if self.BG2.size == 0:
+                button_sender.setText("")
+            font = QFont("Segoe UI", self.BG2.size * 10 + 10)
+            font.setBold(True)
+            size = (self.BG2.size + 1) * 10 + 10
+
+        # Handle Black Gobblet 3
+        elif button_sender.objectName() == self.b_BG3.objectName():
+            size = (self.BG3.size) * 10 + 10
+
+            valid_squares = self.board.get_valid_moves(True, self.board, self.BG3)
+
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            if self.BG3.size > 0:
+                self.BG3.setSize(self.BG3.size - 1)
+            if self.BG3.size == 0:
+                button_sender.setText("")
+            font = QFont("Segoe UI", self.BG3.size * 10 + 10)
+            font.setBold(True)
+            size = (self.BG3.size + 1) * 10 + 10
+
+        # Handle White Gobblet 1
+        elif button_sender.objectName() == self.b_WG1.objectName():
+            size = (self.WG1.size) * 10 + 10
+
+            valid_squares = self.board.get_valid_moves(True, self.board, self.WG1)
+
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            if self.WG1.size > 0:
+                self.WG1.setSize(self.WG1.size - 1)
+            if self.WG1.size == 0:
+                button_sender.setText("")
+            font = QFont("Segoe UI", self.WG1.size * 10 + 10)
+            font.setBold(True)
+            size = (self.WG1.size + 1) * 10 + 10
+
+        # Handle White Gobblet 2
+        elif button_sender.objectName() == self.b_WG2.objectName():
+            size = (self.WG2.size) * 10 + 10
+
+            valid_squares = self.board.get_valid_moves(True, self.board, self.WG2)
+
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            if self.WG2.size > 0:
+                self.WG2.setSize(self.WG2.size - 1)
+            if self.WG2.size == 0:
+                button_sender.setText("")
+            font = QFont("Segoe UI", self.WG2.size * 10 + 10)
+            font.setBold(True)
+            size = (self.WG2.size + 1) * 10 + 10
+
+        # Handle White Gobblet 3
+        elif button_sender.objectName() == self.b_WG3.objectName():
+            size = (self.WG3.size) * 10 + 10
+
+            valid_squares = self.board.get_valid_moves(True, self.board, self.WG3)
+
+            if len(valid_squares) == 0:
+                if self.color == "BLACK":
+                    self.label.setText("Player 2: No Available Moves, Choose another Black Gobblet")
+                elif self.color == "WHITE":
+                    self.label.setText("Player 1: No Available Moves, Choose another White Gobblet")
+                return
+
+            if self.WG3.size > 0:
+                self.WG3.setSize(self.WG3.size - 1)
+            if self.WG3.size == 0:
+                button_sender.setText("")
+            font = QFont("Segoe UI", self.WG3.size * 10 + 10)
+            font.setBold(True)
+            size = (self.WG3.size + 1) * 10 + 10
+
+        # Set the font for the button
+        button_sender.setFont(font)
+
+        # Set the font and text for the display button
+        button = self.display
+        self.size = size
+        self.display.show()
+        font = QFont("Segoe UI", size)
+        font.setBold(True)
+        button.setFont(font)
+        button.setText("O")
+
+        # Set the style sheet based on the player's color
+        if self.color == "WHITE":
+            button.setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+            self.label.setText("Player 1: Choose a Position for Gobblet")
+        elif self.color == "BLACK":
+            button.setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+            self.label.setText("Player 2: Choose a Position for Gobblet")
+
+        # Set the current click state
+        self.click = "CHOOSESQUARE"
+
+        # Disable buttons
+        self.disable_buttons()
+
+        # Disable buttons in non-empty squares
+        non_empty_squares = self.board.get_non_empty_squares()
+        for square_number in non_empty_squares:
+            button = self.b[square_number - 1]
+            button.setEnabled(False)
+
+        # Enable buttons for three in a row squares based on the player's color
+        if self.color == "WHITE":
+            three_in_row_squares = self.board.check_three_rows_all("BLACK", (size - 1) // 10)
+        elif self.color == "BLACK":
+            three_in_row_squares = self.board.check_three_rows_all("WHITE", (size - 1) // 10)
+
+        for square_number in three_in_row_squares:
+            button = self.b[square_number - 1]
+            button.setEnabled(True)
+
+        # Show disabled buttons
+        self.show_disabled_buttons()
+
+
+
+    # Disable all buttons
+    def disable_all_buttons(self):
+        # Disable all square buttons on the game board
+        for i in range(1, 17):
+            self.b[i-1].setEnabled(False)
+        
+        # Disable Black Gobblet buttons
+        self.b_BG1.setEnabled(False)
+        self.b_BG2.setEnabled(False)
+        self.b_BG3.setEnabled(False)
+        
+        # Disable White Gobblet buttons
+        self.b_WG1.setEnabled(False)
+        self.b_WG2.setEnabled(False)
+        self.b_WG3.setEnabled(False)
+
+
+    # The check_winner method is responsible for determining the winner of the game and updating the GUI accordingly.
+    # It checks for a draw, White player's victory, or Black player's victory, and updates the label and button styles accordingly.
+    # If the game is paused, the label displays "Game Paused." It also handles AI moves if applicable.
+
+    def check_winner(self):
+        # Enable the "Draw" and "Resume/Pause" buttons
+        self.draw.setEnabled(True)
+        self.resume_pause.setEnabled(True)
+
+        # Check if the game is paused
+        if self.resume_pause_b:
+            self.label.setText("Game Paused")
+            self.gameRunning = 0
+            return
+
+        # Check if the game ended in a draw
+        if self.draw_b:
+            self.label.setText("Game Over. DRAW")
+            self.draw_b = 0
+            self.gameRunning = 0
+            self.draw.setEnabled(False)
+            self.resume_pause.setEnabled(False)
+            return
+
+        # If it's a new game, restart the board
+        if self.new_game_b:
+            self.new_game_b = 0
+            self.restart()
+
+        # Check if White player wins
+        if self.board.check_winner("WHITE"):
+            # Display victory message for White player
+            self.draw.setEnabled(False)
+            self.resume_pause.setEnabled(False)
+            self.label.setText("Game Over. White Wins")
+            # Highlight winning squares on the board
+            winning_squares = self.board.get_winner("WHITE")
+            for square in winning_squares:
+                self.b[square-1].setStyleSheet("background-color: rgb(0, 170, 0); color: white;")
+            # Disable all buttons and update game state
+            self.disable_all_buttons()
+            self.gameRunning = 0
+            if(self.BLACKAI):
+                self.comboBoxBlack.setEnabled(True)
+            if(self.WHITEAI):
+                self.comboBoxWhite.setEnabled(True)
+
+        # Check if Black player wins
+        elif self.board.check_winner("BLACK"):
+            # Display victory message for Black player
+            self.draw.setEnabled(False)
+            self.resume_pause.setEnabled(False)
+            self.label.setText("Game Over. Black Wins")
+            # Highlight winning squares on the board
+            winning_squares = self.board.get_winner("BLACK")
+            for square in winning_squares:
+                self.b[square-1].setStyleSheet("background-color: rgb(0, 170, 0); color: black;")
+            # Disable all buttons and update game state
+            self.disable_all_buttons()
+            self.gameRunning = 0
+            if(self.BLACKAI):
+                self.comboBoxBlack.setEnabled(True)
+            if(self.WHITEAI):
+                self.comboBoxWhite.setEnabled(True)
+
+        else:
+            # If the game is ongoing, and it's the AI's turn, display a thinking message and make the AI move
+            if self.color == "BLACK":
+                if self.BLACKAI:
+                    self.label.setText("Player 2 Thinking....")
+                    self.playAI()
+            elif self.color == "WHITE":
+                if self.WHITEAI:
+                    self.label.setText("Player 1 Thinking....")
+                    self.playAI()
+
