@@ -491,6 +491,32 @@ class MyMainWindow(QMainWindow,Ui_Form):
         # Disable the "Draw" and "Resume/Pause" buttons
         self.draw.setEnabled(False)
         self.resume_pause.setEnabled(False)
+    # The resumePause method handles the "Resume/Pause" button click event.
+    # It enables player selection for AI-controlled players and toggles the resume_pause_b flag.
+    # If the game is not paused, it sets the label to indicate the AI player's turn.
+    def resumePause(self):
+        # Enable player selection for AI-controlled players
+        self.comboBoxBlack.setEnabled(True)
+        self.comboBoxWhite.setEnabled(True)
+
+        # Toggle the resume_pause_b flag
+        if self.resume_pause_b:
+            self.resume_pause_b = 0
+            self.comboBoxBlack.setEnabled(False)
+            self.comboBoxWhite.setEnabled(False)
+        else:
+            self.resume_pause_b = 1
+
+        # If the game is not paused, update the label to indicate the AI player's turn
+        if self.resume_pause_b == 0:
+            if self.color == "WHITE":
+                if self.WHITEAI:
+                    self.label.setText("Player 1 Thinking....")
+                    self.playAI()
+            elif self.color == "BLACK":
+                if self.BLACKAI:
+                    self.label.setText("Player 2 Thinking....")
+                    self.playAI()
 
     # The changePlayer method handles the player selection change event.
     # It updates the AI player flags, disables/enables player selection comboboxes, and updates the label accordingly.
