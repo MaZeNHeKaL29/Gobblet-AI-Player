@@ -911,3 +911,127 @@ class MyMainWindow(QMainWindow,Ui_Form):
                     self.label.setText("Player 1 Thinking....")
                     self.playAI()
 
+
+
+    # The playAI method simulates the AI player's move and updates the game state.
+    # It uses the minimax algorithm with alpha-beta pruning to determine the best move.
+    def playAI(self):
+        # Disable all buttons during AI's turn
+        self.disable_all_buttons()
+
+        # Create an instance of the AI class for the current player's color
+        self.ai = AI(self.color)
+
+        # Get the AI player's selected level of difficulty
+        if(self.color == "WHITE"):
+            level = self.comboBoxWhite.currentIndex() + 1
+        elif(self.color == "BLACK"):
+            level = self.comboBoxBlack.currentIndex() + 1
+
+
+        # Set depth and wait time based on the AI level
+        if(level == 1):
+            depth = 1
+            QtTest.QTest.qWait(400)
+        elif(level == 2):
+            depth = 1
+            QtTest.QTest.qWait(400)
+        elif(level == 3):
+            depth = 2
+            QtTest.QTest.qWait(300)
+
+        # Initialize alpha and beta values for alpha-beta pruning
+        alpha = -math.inf
+        beta = math.inf
+
+        # Create a deep copy of the current board for AI evaluation
+        board_check = copy.deepcopy(self.board)
+        color = self.color
+
+         # Call the minimax_alpha_beta method to get the AI's move and evaluation score
+        eval, gobblet_move, square_to_append = self.ai.minimax_alpha_beta(level,depth,alpha,beta,True,color,board_check)
+
+        row2 = -1
+        col2 = -1
+
+        # Determine the button and gobblet associated with the AI's move
+        if(gobblet_move == 20):
+            gobblet = self.board.WG1
+            button_g = self.b_WG1
+        elif(gobblet_move == 21):
+            gobblet = self.board.WG2
+            button_g = self.b_WG2
+        elif(gobblet_move == 22):
+            gobblet = self.board.WG3
+            button_g = self.b_WG3
+        elif(gobblet_move == 30):
+            gobblet = self.board.BG1
+            button_g = self.b_BG1
+        elif(gobblet_move == 31):
+            gobblet = self.board.BG2
+            button_g = self.b_BG2
+        elif(gobblet_move == 32):
+            gobblet = self.board.BG3
+            button_g = self.b_BG3
+        else:
+            row2,col2 = get_row_column(gobblet_move)
+            gobblet = self.board.get_gobblet(row2,col2)
+            button_g = self.b[gobblet_move - 1]
+
+        if(gobblet is not None):
+            size = gobblet.size*10 + 10
+        
+        # Update the UI based on the AI's move
+        if(gobblet_move >= 1 and gobblet_move <= 16):
+            self.board.removeLastGobbletFromSquare(row2,col2)
+            if (self.board.get_gobblet(row2,col2) is not None and (self.board.get_gobblet(row2,col2).size != 0)):
+                font = QFont("Segoe UI", (self.board.get_gobblet(row2,col2).size)*10 + 10)
+                font.setBold(True)
+                button_g.setFont(font)
+                if(self.board.get_gobblet(row2,col2).color == "WHITE"):
+                    button_g.setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+                elif(self.board.get_gobblet(row2,col2).color == "BLACK"):
+                    button_g.setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+            else:
+                button_g.setText("")
+        else:
+            gobblet.setSize(gobblet.size - 1)
+            if(gobblet.size == 0):
+                button_g.setText("")
+            else:
+                font = QFont("Segoe UI", gobblet.size * 10 + 10)
+                font.setBold(True)
+                size = (gobblet.size+1)*10 + 10
+                button_g.setFont(font)
+
+        row,col = get_row_column(square_to_append)
+        button_s = self.b[square_to_append - 1]
+
+        font = QFont("Segoe UI", size)
+        font.setBold(True)
+        button_s.setFont(font)
+        button_s.setText("O")
+        self.board.appendGobbletToSquare(row,col,Gobblet(self.color,(size-1)//10))
+
+        # Check if the game state needs to be restarted due to human intervention during AI's turn
+        if(self.color == "BLACK" and not self.BLACKAI or self.color != color):
+            self.restart()
+            return
+        elif(self.color == "WHITE" and not self.WHITEAI or self.color != color):
+            self.restart()
+            return
+    
+        # Switch player turn and update UI
+        if(self.color == "WHITE"):
+            button_s.setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+            self.color = "BLACK"
+            self.label.setText("Player 2 : Choose Black Gobblet")
+        elif(self.color == "BLACK"):
+            button_s.setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+            self.color = "WHITE"
+            self.label.setText("Player 1 : Choose White Gobblet")
+
+        self.click = "CHOOSEGOBBLET"
+        self.disable_buttons()
+        self.check_winner()
+
