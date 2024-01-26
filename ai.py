@@ -13,10 +13,9 @@ class AI(object):
         #Constructor to initialize AI with a specified color (either "WHITE" or "BLACK")
         self.color = color
 
+    
     #Method to evaluate the current state of the game board for the AI player.
     def evaluate(self, board, level, color, eval):
-
-
         # Determine the opponent's color based on the current player's color
         if self.color == "WHITE":
             color2 = "BLACK"
