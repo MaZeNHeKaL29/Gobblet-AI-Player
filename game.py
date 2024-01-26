@@ -442,6 +442,55 @@ class MyMainWindow(QMainWindow,Ui_Form):
                 self.label.setText("Player 2 Thinking....")
                 self.playAI()
 
+   # The show_disabled_buttons method highlights disabled buttons with a red background based on the color of the Gobblet on the square.
+    # White Gobblets are displayed with white text on a red background, and black Gobblets with black text on a red background.
+    def show_disabled_buttons(self):
+        for i in range(1, 17):
+            # Check if the button is disabled
+            if not self.b[i-1].isEnabled():
+                # Get the row and column of the square
+                row, col = get_row_column(i)
+                # Get the Gobblet on the square
+                gobblet = self.board.get_gobblet(row, col)
+                # Change the style of the button based on the color of the Gobblet
+                if gobblet is not None and gobblet.color == "WHITE":
+                    self.b[i-1].setStyleSheet("background-color: rgb(170, 0, 0); color: white;")
+                elif gobblet is not None and gobblet.color == "BLACK":
+                    self.b[i-1].setStyleSheet("background-color: rgb(170, 0, 0); color: black;")
+
+    # The show_buttons method updates the style of buttons based on the color of Gobblets on the squares.
+    # White Gobblets are displayed with white text on a light background, and black Gobblets with black text on a light background.
+    def show_buttons(self):
+        for i in range(1, 17):
+            # Get the row and column of the square
+            row, col = get_row_column(i)
+            # Get the Gobblet on the square
+            gobblet = self.board.get_gobblet(row, col)
+            # Change the style of the button based on the color of the Gobblet
+            if gobblet is not None and gobblet.color == "WHITE":
+                self.b[i-1].setStyleSheet("background-color: rgb(170, 170, 127); color: white;")
+            elif gobblet is not None and gobblet.color == "BLACK":
+                self.b[i-1].setStyleSheet("background-color: rgb(170, 170, 127); color: black;")
+            else:
+                self.b[i-1].setStyleSheet("background-color: rgb(170, 170, 127);")
+
+    # The draw_clicked method handles the "Draw" button click event.
+    # It enables player selection for AI-controlled players and sets flags for a draw, disables buttons, and updates the label.
+    def draw_clicked(self):
+        # Enable player selection for AI-controlled players
+        if self.BLACKAI:
+            self.comboBoxBlack.setEnabled(True)
+        if self.WHITEAI:
+            self.comboBoxWhite.setEnabled(True)
+        # Set the draw flag and disable buttons
+        self.draw_b = 1
+        self.disable_all_buttons()
+        # Display the draw message in the label
+        if ((not self.WHITEAI or not self.BLACKAI) and not self.gameRunning) or self.resume_pause_b:
+            self.label.setText("Game Over. DRAW")
+        # Disable the "Draw" and "Resume/Pause" buttons
+        self.draw.setEnabled(False)
+        self.resume_pause.setEnabled(False)
 
 
     # Enable all buttons on the game board
