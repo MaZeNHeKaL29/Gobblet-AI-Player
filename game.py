@@ -492,7 +492,30 @@ class MyMainWindow(QMainWindow,Ui_Form):
         self.draw.setEnabled(False)
         self.resume_pause.setEnabled(False)
 
+    # The changePlayer method handles the player selection change event.
+    # It updates the AI player flags, disables/enables player selection comboboxes, and updates the label accordingly.
+    def changePlayer(self):
+        # Check the selected player (Black or White)
+        if self.playAsBlack.isChecked():
+            # Set flags for playing as Black and disable White player selection
+            self.WHITEAI = True
+            self.BLACKAI = False
+            self.comboBoxBlack.setEnabled(False)
+            self.comboBoxWhite.setEnabled(True)
+            self.label.setText("")
+        elif self.playAsWhite.isChecked():
+            # Set flags for playing as White and disable Black player selection
+            self.WHITEAI = False
+            self.BLACKAI = True
+            self.comboBoxBlack.setEnabled(True)
+            self.comboBoxWhite.setEnabled(False)
+            self.label.setText("Player 1: Choose White Gobblet")
 
+        # Disable buttons and check for a winner
+        self.disable_buttons()
+        if self.draw.isEnabled():
+            self.check_winner()
+            
     # Enable all buttons on the game board
     def enable_buttons(self):
         for i in range(1, 17):
