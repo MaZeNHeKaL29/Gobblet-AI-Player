@@ -32,7 +32,7 @@ These supported features collectively contribute to a dynamic and customizable g
 
 
 ## Link To Download:
-https://drive.google.com/drive/folders/1vNU_PH-NdcDE-nBQwIrq3cmhKXT1Zhhk?usp=drive_link
+https://www.mediafire.com/file/9e3byjm5iq52elk/Gobblet%20AI%20Player.rar
 
 
 
